@@ -23,8 +23,8 @@ Before you begin, ensure you have met the following requirements:
 1. **Clone the repository**
 
    ```bash
-   git clone <repository-url>
-   cd <repository-name>
+   git clone https://github.com/harperreed/imbedding.git
+   cd imbedding
    ```
 
 2. **Build and run the Docker container**
