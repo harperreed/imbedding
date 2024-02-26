@@ -1,0 +1,6 @@
+Flask
+torch
+torchvision
+open-clip-torch
+Pillow
+transformers

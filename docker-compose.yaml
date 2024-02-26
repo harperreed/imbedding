@@ -1,0 +1,18 @@
+version: '3.8'
+services:
+  app:
+    build: .
+    ports:
+      - "1708:1708"
+    volumes:
+      - .:/app
+    runtime: nvidia
+    environment:
+      NVIDIA_VISIBLE_DEVICES: all
+      NVIDIA_DRIVER_CAPABILITIES: compute,utility
+      MODEL: ViT-SO400M-14-SigLIP-384
+      MODEL_NAME: siglip-so400m/14@384
+      MAX_BATCH_SIZE: 128
+      PORT: 1708
+      DEVICE: "cuda:0"
+      DEBUG: "True"
